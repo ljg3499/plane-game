@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>打飞机</title>
+    <link rel="stylesheet" href="min.css" />
+  </head>
+  <body>
+    <div class="aircraft">
+      <!-- 爆炸boom -->
+      <!-- <div class="boom"></div> -->
+      <!-- 开始暂停键 -->
+      <img class="open" src="img/pause1.png" />
+      <!-- 增加子弹道具 -->
+      <span><img class="bullet2 props" src="img/bullet_award.png"/></span>
+      <!-- <span><img class="bullet2 props" src="img/bullet_award.png"/></span>
+      <span><img class="bullet2 props" src="img/bullet_award.png"/></span>
+      <span><img class="bullet2 props" src="img/bullet_award.png"/></span>
+      <span><img class="bullet2 props" src="img/bullet_award.png"/></span> -->
+      <!-- 炸弹道具 -->
+      <img class="bomb props" src="img/bomb_award.png" />
+      <!-- <img class="bomb props" src="img/bomb_award.png" />
+      <img class="bomb props" src="img/bomb_award.png" />
+      <img class="bomb props" src="img/bomb_award.png" />
+      <img class="bomb props" src="img/bomb_award.png" /> -->
+      <!-- 中飞船 -->
+      <!-- <span class="">
+            <span class="boom"></span>
+        </span> -->
+      <span class="enemy"><img class="middle allEnemies" src="img/middle.png"/></span>
+      <span class="enemy"><img class="middle allEnemies" src="img/middle.png"/></span>
+      <span class="enemy"><img class="middle allEnemies" src="img/middle.png"/></span>
+      <span class="enemy"><img class="middle allEnemies" src="img/middle.png"/></span>
+      <span class="enemy"><img class="middle allEnemies" src="img/middle.png"/></span>
+      <span class="enemy"><img class="middle allEnemies" src="img/middle.png"/></span>
+      <span class="enemy"><img class="middle allEnemies" src="img/middle.png"/></span>
+      <!-- 大飞船 -->
+      <span class="enemy"><img class="big allEnemies" src="img/big.png"/></span>
+      <span class="enemy"><img class="big allEnemies" src="img/big.png"/></span>
+      <span class="enemy"><img class="big allEnemies" src="img/big.png"/></span>
+      <span class="enemy"><img class="big allEnemies" src="img/big.png"/></span>
+      <span class="enemy"><img class="big allEnemies" src="img/big.png"/></span>
+      <!-- 小飞船 -->
+      <span class="enemy"> <img class="enemy allEnemies" src="img/small.png" /> </span
+      ><span class="enemy"> <img class="enemy allEnemies" src="img/small.png" /> </span
+      ><span class="enemy"> <img class="enemy allEnemies" src="img/small.png" /> </span
+      ><span class="enemy"> <img class="enemy allEnemies" src="img/small.png" /> </span
+      ><span class="enemy"> <img class="enemy allEnemies" src="img/small.png" /> </span
+      ><span class="enemy"> <img class="enemy allEnemies" src="img/small.png" /> </span
+      ><span>
+        <img class="enemy allEnemies" src="img/small.png" />
+      </span>
+      <!-- 子弹 -->
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <img class="bullet" src="img/yellow_bullet.png" />
+      <!-- 蓝色子弹左侧 -->
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet leftBullet" src="img/blue_bullet.png" />
+      <!-- 蓝色子弹右侧 -->
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <img class="blueBullet rightBullet" src="img/blue_bullet.png" />
+      <!-- 飞船 -->
+      <span>
+        <img class="img" src="img/plane.png" />
+      </span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"></script>
+    <script src="min.js"></script>
+  </body>
+</html>
